@@ -1,4 +1,5 @@
 import styles from './styles.module.scss';
+import { SignInButton } from 'components';
 
 const Header = () => {
   return (
@@ -11,6 +12,7 @@ const Header = () => {
           </a>
           <a href=''>Posts</a>
         </nav>
+        <SignInButton />
       </div>
     </header>
   );
