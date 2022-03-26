@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 
 interface ISubscribeButtonProps {
-  priceId: number;
+  priceId: string;
 }
 
 const SubscribeButton = ({ priceId }: ISubscribeButtonProps) => {
