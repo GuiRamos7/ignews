@@ -15,6 +15,11 @@
 
   transition: filter 0.2 ease-in-out;
 
+  svg:first-child {
+    margin-right: 1rem;
+    fill: #737380;
+  }
+
   svg {
     width: 20px;
     height: 20px;
@@ -23,11 +28,6 @@
     &.isLogged {
       fill: var(--green-500);
     }
-  }
-
-  svg:first-child {
-    margin-right: 1rem;
-    fill: #737380;
   }
 
   svg.closeIcon {
