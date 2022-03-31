@@ -7,10 +7,18 @@ import styles from './styles.module.scss';
 const SignInButton = () => {
   const { data: session } = useSession();
 
+  console.log(session);
+
   return (
     <button
       type='button'
-      onClick={() => (session ? signIn('github') : signOut())}
+      onClick={() => {
+        if (session) {
+          signOut();
+        } else {
+          signIn('github');
+        }
+      }}
       className={styles.signInButton}
     >
       <FaGithub className={session ? styles.isLogged : ''} />
