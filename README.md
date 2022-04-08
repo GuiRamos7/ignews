@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignews
 
-## Getting Started
+Ignews is a blog, that uses powerful technologies as a Next.js, SCSS, Stripe, and more, on this application I could learn loat of technologies, and apply to a project
 
-First, run the development server:
+# 🖥️  Technologies used
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* NextJS
+* SCSS (To style my components)
+* Stripe (To handle the payments)
+* FaunaDB (Serveless Database)
+* NextAuth (To handle the login with GitHub OAuth)
+* Prismic CMS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🚀 Overview of the project
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+How works?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The application is a blog, where the user needs to subscribe to get access to the posts. To handle payment I use [Stripe](https://stripe.com/br), after the user subscribe I save the data of the user as (name, email, subscribe status).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+One of the features is if the user dont have the access he can see a preview
